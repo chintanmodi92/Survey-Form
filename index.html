@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>Survey form</title>
+</head>
+
+<body>
+
+      <h1 id="title">Survey form</h1>
+
+
+    <div id="main">
+
+      <p id="description">Help us improve your satisfaction!</p>
+
+      <form id="survey-form" action="/send-form" method="get">
+
+        <div class="container">
+          <div class="labels">
+            <label for="name" id="name-label">Name</label>
+          </div>
+          <div class="inputs"><input type="text" name="name" id="name" placeholder="Enter your full name." required></div>
+          <br>
+        </div>
+
+        <div class="container">
+          <div class="labels"><label for="email" id="email-label">Email</label></div>
+          <div class="inputs"><input type="email" name="email" id="email" placeholder="Enter your correct email." required></div>
+          <br>
+        </div>
+
+        <div class="container">
+          <div class="labels"><label for="age" id="number-label">Age</label></div>
+          <div class="inputs"><input type="number" name="age" id="number" min="1" max="100" placeholder="Age" required></div>
+          <br>
+        </div>
+
+        <div class="container">
+          <div class="labels"><label for="gender">Select your gender</label></div>
+          <div class="inputs"><select id="dropdown" name="gender">
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+          </select></div>
+          <br>
+        </div>
+
+        <div class="container">
+          <div class="labels"><label for="radio">How satisfied are you with our service?</label></div>
+          <div class="inputs"><input type="radio" name="name" value="Very" checked>Very satisfied <br>
+          <input type="radio" name="name" value="Somewhat">Somewhat satisfied <br>
+          <input type="radio" name="name" value="Enough">Enough satisfied <br>
+          <input type="radio" name="name" value="Not">Not so satisfied
+          <br></div>
+        </div>
+
+        <div class="container">
+          <div class="labels"><label for="checkbox">What would you like to improve?<br />(check all that apply)</label></div>
+          <div class="inputs"><input type="checkbox" name="name" value="shipping">Faster Shipping time. <br>
+          <input type="checkbox" name="name" value="price">Lower item prices. <br>
+          <input type="checkbox" name="name" value="returns">Easier returns on purchases. <br>
+          <input type="checkbox" name="name" value="customer">Better customer service. <br>
+          <input type="checkbox" name="name" value="support">Lifetime warranty support.
+          <br></div>
+        </div>
+
+        <div class="container">
+          <div class="labels"><label for="textarea">Do you have additional comments</label></div>
+          <div class="inputs"><textarea name="comment" rows="3" cols="30" placeholder="Enter your comments here."></textarea>
+          <br></div>
+        </div>
+
+        <div class="container">
+          <button type="submit" id="submit" value="submit">Submit</button>
+        </div>
+
+      </form>
+
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+body{
+  background-color: #66e0ff;
+  color: #333333;
+  font-family: Helvetica, Optima, Segoe UI;
+
+}
+
+#title{
+  text-align: center;
+}
+
+#main{
+  background-color: #e6faff;
+  width: 75%;
+  margin: 0 auto;
+  text-align: center;
+  border-radius: 15px;
+
+}
+
+#description{
+  padding: 30px 0 0px 0;
+}
+.container{
+  display: block;
+  padding-bottom: 10px;
+}
+
+.labels{
+  display: inline-block;
+  text-align: right;
+  vertical-align: top;
+  width: 40%;
+  padding: 10px;
+  margin-top: 0px;
+  font-weight: 400;
+  font-size: 110%;
+}
+
+.inputs{
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+  width: 48%;
+  margin-top: 10px;
+
+}
